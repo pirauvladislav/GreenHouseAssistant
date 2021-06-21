@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Text;
 
-namespace GreenHouseAssistant.ApiServer
+namespace GreenHouseAssistant.Network
 {
-    public class WebServerConnectionErrorEventArgs : EventArgs
+    public class WiFiConnectionErrorEventArgs : EventArgs
     {
-        public WebServerConnectionErrorEventArgs(string connectionError, Exception exception)
+        public WiFiConnectionErrorEventArgs(string connectionError, Exception exception)
         {
             ConnectionError = connectionError;
             Exception = exception;

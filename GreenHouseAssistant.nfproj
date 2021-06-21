@@ -19,12 +19,13 @@
   </PropertyGroup>
   <Import Project="$(NanoFrameworkProjectSystemPath)NFProjectSystem.props" Condition="Exists('$(NanoFrameworkProjectSystemPath)NFProjectSystem.props')" />
   <ItemGroup>
-    <Compile Include="ApiServer\ApiController.cs" />
-    <Compile Include="ApiServer\WebApiServer.cs" />
-    <Compile Include="ApiServer\WebServerConnectedEventArgs.cs" />
-    <Compile Include="ApiServer\WebServerConnectionErrorEventArgs.cs" />
-    <Compile Include="ApiServer\WebServerExtensions.cs" />
+    <Compile Include="Api\ApiController.cs" />
+    <Compile Include="Api\WebApiServer.cs" />
+    <Compile Include="Network\WiFiConnectedEventArgs.cs" />
+    <Compile Include="Network\WiFiConnectionErrorEventArgs.cs" />
+    <Compile Include="Api\WebServerExtensions.cs" />
     <Compile Include="Gpio\OnBoardLed.cs" />
+    <Compile Include="Network\WiFiNetworkAdapter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

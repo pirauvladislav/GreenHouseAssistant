@@ -39,8 +39,20 @@ namespace GreenHouseAssistant.Gpio
 
             return _instance;
         }
-
         public void StartBlinking()
+        {
+            StartBlinking(300);
+        }
+        public void StartBlinkingFast()
+        {
+            StartBlinking(100);
+        }
+        public void StartBlinkingSlow()
+        {
+            StartBlinking(500);
+        }
+
+        private void StartBlinking(int sleep)
         {
             if (_ledState == LedState.Blinking)
                 return;
@@ -51,7 +63,7 @@ namespace GreenHouseAssistant.Gpio
                 while (_ledState == LedState.Blinking)
                 {
                     _led.Toggle();
-                    Thread.Sleep(200);
+                    Thread.Sleep(sleep);
                 }
             }).Start();
         }

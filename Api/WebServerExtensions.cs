@@ -3,7 +3,7 @@ using System;
 using System.Net;
 using System.Text;
 
-namespace GreenHouseAssistant.ApiServer
+namespace GreenHouseAssistant.Api
 {
     static class WebServerExtensions
     {
